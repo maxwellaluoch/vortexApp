@@ -1,0 +1,41 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" data-panel="left" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+    <div class="center sliding">Customers</div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class-->
+      <a href="#" class="link icon-only open-panel"> <i class="f7-icons size-50 color-blue">add</i></a>
+      <a href="#" class="link icon-only open-panel"> <i class="f7-icons size-50 color-blue">refresh</i></a>
+    </div>
+  </div>
+</div>
+  <div data-page="customer" class="page">
+    <!-- Search Bar -->
+ <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+   <div class="searchbar-input">
+     <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+   </div><a href="#" class="searchbar-cancel">Cancel</a>
+ </form>
+ <!-- Search Bar overlay -->
+ <div class="searchbar-overlay"></div>
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="content-block searchbar-not-found">
+                Nothing found
+      </div>
+      <div class="list-block list-block-search searchbar-found">
+        <ul>
+          <li>
+            <label class="label-checkbox item-content">
+              <div class="item-inner">
+                <div class="item-title" id="custo"></div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
